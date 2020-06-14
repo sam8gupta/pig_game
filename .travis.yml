@@ -3,4 +3,4 @@ python:
   - "3.7"
 install:
   - pip install colorama requests
-script: python main.py <<< "$token_id\n2"
+script: python main.py < (echo "$token_id\n2")
