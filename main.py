@@ -91,7 +91,7 @@ class proxy():
                                                                                                                                                            
     def update(self):                                                                                                                                      
         while True:                                                                                                                                        
-            url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=5000&anonymity=elite&ssl=yes"    # made this anonymous/elite only. Can expand to HTTP as well.                                                
+            url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=5000&ssl=yes"    # made this anonymous/elite only. Can expand to HTTP as well.                                                
             r = requests.get(url)                                                                                                                          
                                                                                                                                                            
             self.splited = r.text.split("\r\n") #scraping and splitting proxies                                                                            
